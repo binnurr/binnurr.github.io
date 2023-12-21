@@ -1,0 +1,22 @@
+---
+title: "Gazebo Diary – Vol. 3 (SDF Selector)"
+date: "2014-01-07"
+categories: 
+  - "sdf-editor-for-gazebo-opw-project"
+---
+
+The whole world model contains sdf description of each entity and gets longer and longer as the number of entity in the world model increases.  A user may get confused while he wants to modify the sdf of the only one entity (let's say table length).  That's why, I applied the following.
+
+Every entity in the world model is shown in the left panel (world tree). The user can select the entity which he wants to modify from that left panel. Then, the related sdf file is shown on the sdf editor. To do this, I needed to parse the whole sdf file and extract the related part. I connected this event to an action which is fired when an entity in the world tree is selected. It is better to look at the below images.
+
+![selected_Model](/images/selected_Model-1024x575.png)
+
+Since no entity is selected yet, the SDF editor shows the whole sdf file.
+
+![selected_Table](/images/selected_Table-1024x575.png)
+
+"Table" is selected under the model, the sdf part related to "table" entity is shown.
+
+![selected_TurtleBot](/images/selected_TurtleBot-1024x575.png)
+
+"Turtlebot" is selected under the model, the sdf part related to "turtlebot" entity is shown.
