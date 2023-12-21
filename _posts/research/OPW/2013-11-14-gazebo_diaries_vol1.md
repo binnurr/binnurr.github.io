@@ -1,5 +1,5 @@
 ---
-title: "Gazebo Dairies - Vol. 1 (warming up to Gazebo)"
+title: "Gazebo Diary - Vol. 1 (warming up to Gazebo)"
 date: "2013-11-14"
 categories: 
   - "sdf-editor-for-gazebo-opw-project"
